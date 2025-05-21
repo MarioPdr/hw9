@@ -37,7 +37,7 @@ router.delete('/:id', function(req, res) {
     );
     res.json({ mensagem: 'Cliente excluído com sucesso!' });
   } else {
-    res.status(404).json({ mensagem: 'Cliente não existe na base de dados.' });
+    res.status(404).json({ mensagem: 'Cliente não existe.' });
   }
 });
 
